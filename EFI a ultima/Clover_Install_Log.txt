@@ -1,0 +1,57 @@
+
+Clover EFI installer log - Fri Oct 25 13:30:11 PDT 2019
+Installer version: v2.5k r5097 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *400.1 GB   disk0
+   1:           Windows Recovery                         471.9 MB   disk0s1
+   2:                        EFI EFI                     104.9 MB   disk0s2
+   3:         Microsoft Reserved                         16.8 MB    disk0s3
+   4:       Microsoft Basic Data                         398.9 GB   disk0s4
+   5:           Windows Recovery                         550.5 MB   disk0s5
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *320.1 GB   disk1
+   1:                        EFI NO NAME                 536.9 MB   disk1s1
+   2:           Linux Filesystem                         317.4 GB   disk1s2
+   3:                 Linux Swap                         2.1 GB     disk1s3
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *480.1 GB   disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                 Apple_APFS Container disk3         479.9 GB   disk2s2
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +479.9 GB   disk3
+                                 Physical Store disk2s2
+   1:                APFS Volume MacOSNew                250.0 GB   disk3s1
+   2:                APFS Volume PreBoot                 45.1 MB    disk3s2
+   3:                APFS Volume Recovery                517.7 MB   disk3s3
+   4:                APFS Volume VM                      20.5 KB    disk3s4
+
+Target volume /Volumes/MacOSNew on disk3 is APFS on physical store disk2s2
+======================================================
+Backing up EFI files
+
+Backing up stage2 file /Volumes/MacOSNew/EFIROOTDIR/boot  to /Volumes/MacOSNew/EFI-Backups/r5018/2019-10-25-13h30/boot
+Backing up /Volumes/MacOSNew/EFIROOTDIR/EFI folder to /Volumes/MacOSNew/EFI-Backups/r5018/2019-10-25-13h30/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+
+Theme 'metal' (defined in config.plist) not found !
+Using default theme 'random'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
